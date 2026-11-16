@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MusicPix | Share Your Music and Get Real Reviews</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <nav class="navbar md:navbar-expand bg-1 fg-2">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">MusicPix</a>
+      <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarNavMenu" aria-controls="navbarNavMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" aria-hidden="true"></span>
+      </button>
+      <dialog class="drawer drawer-end" tabindex="-1" id="navbarNavMenu" aria-labelledby="navbarNavMenuLabel">
+        <div class="drawer-header">
+          <span class="drawer-title" id="navbarNavMenuLabel">Menu</span>
+          <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+        </div>
+        <div class="drawer-body">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">How It Works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </dialog>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container mt-4">
+      <h1>Share your music. Get honest reviews.</h1>
+      <p>MusicPix is a community where new artists upload their tracks and real listeners leave feedback to help them grow.</p>
+    </div>
+
+    <div class="container mt-3">
+      <div id="soundCarousel" class="carousel carousel-overlay slide">
+        <div class="carousel-inner rounded-5">
+          <div class="carousel-item active">
+            <img src="images/lab6-banner1.jpg" class="d-block w-100" alt="Crowd cheering at a live concert under bright stage lights">
+          </div>
+          <div class="carousel-item">
+            <img src="images/lab6-banner2.jpg" class="d-block w-100" alt="Smiling woman wearing white wireless headphones while listening to music">
+          </div>
+          <div class="carousel-item">
+            <img src="images/lab6-banner3.jpg" class="d-block w-100" alt="Female singer recording vocals into a studio microphone">
+          </div>
+        </div>
+        <div class="carousel-overlay-controls">
+          <div>
+            <button class="btn-icon btn-sm btn-subtle theme-secondary" type="button" data-bs-target="#soundCarousel" data-bs-slide="prev">
+              <span class="carousel-icon-prev" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="btn-icon btn-sm btn-subtle theme-secondary" type="button" data-bs-target="#soundCarousel" data-bs-slide="next">
+              <span class="carousel-icon-next" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#soundCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#soundCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#soundCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="bg-1 fg-2 py-4">
+    <div class="container">
+      <p>&copy; 2026 MusicPix. Created by Deepak Jassi for CCT360.</p>
+      <p>Carousel photos by Jeremy Li, Sound On and cottonbro studio on Pexels.</p>
+    </div>
+  </footer>
+</body>
+</html>
